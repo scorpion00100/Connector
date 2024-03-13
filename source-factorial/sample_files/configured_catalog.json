@@ -1,0 +1,43 @@
+{
+    "streams": [
+        {
+            "stream": {
+                "name": "FactorialUsers",
+                "json_schema": {
+                    "type": "object",
+                    "properties": {
+                        "id": { "type": "integer" },
+                        "first_name": { "type": "string" },
+                        "last_name": { "type": "string" },
+                        "email": { "type": "string", "format": "email" },
+                        "phone_number": { "type": "string" },
+                        "address": { "type": "string" },
+                        "city": { "type": "string" },
+                        "postal_code": { "type": "string" },
+                        "country": { "type": "string" },
+                        "date_of_birth": { "type": "string", "format": "date" },
+                        "start_date": { "type": "string", "format": "date-time" },
+                        "employment_status": { "type": "string" },
+                        "department": { "type": "string" },
+                        "manager_id": { "type": "integer" },
+                        "termination_date": { "type": "string", "format": "date" },
+                        "termination_reason": { "type": "string" },
+                        "identifier": { "type": "string" },
+                        "identifier_type": { "type": "string" },
+                        "gender": { "type": "string" },
+                        "nationality": { "type": "string" },
+                        "bank_number": { "type": "string" },
+                        "swift_bic": { "type": "string" },
+                        "bank_number_format": { "type": ["null", "string"] },
+                        "state": { "type": "string" },
+                        "address_line_1": { "type": "string" },
+                        "address_line_2": { "type": ["null", "string"] },
+                        "contact_name": { "type": ["null", "string"] },
+                        "contact_number": { "type": ["null", "string"] }
+                    }
+                }
+            },
+            "sync_mode": "full_refresh"
+        }
+    ]
+}
